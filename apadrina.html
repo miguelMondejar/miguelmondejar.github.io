@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Pingüinos - Apadrina</title>
+    <!-- Icono -->
+    <link rel="icon" type="image/x-icon" href="imagenes/logo pingu.png">
+    <!-- Bootstrap icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilosPracticaFinal.css">
+    <!-- Fuente de letras -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navegador responsive -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="menu">
+        <div class="container px-5">
+            <a class="navbar-brand" href="index.html">PINGÜINOS WEB <img class="gif" alt="Icono Pagina" src="imagenes/pescando.gif"></img></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <li class="nav-item"><a class="nav-link" href="curiosidades.html">Curiosidades</a>
+                    <li class="nav-item"><a class="nav-link" href="ubicacion.html">Ubicación</a>
+                    <li class="nav-item"><a class="nav-link" href="apadrina.html">Apadrina tu pingüino</a>
+                    <li class="nav-item"><a class="nav-link" href="donar_contacto.html">Donativo y Contacto</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header-->
+    <header class="bg-dark py-5">
+        <div class="container px-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center my-5">
+                        <h1 class="display-5 fw-bolder text-white mb-2">APADRINA TU PINGÜINO</h1>
+                        <p class="lead text-white-50 mb-4">Existe la forma de que puedas apadrinar un pingüino y puedes hasta ponerle un mote.
+                        Es totalmente gratuito y abierto a personas de todo el mundo. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contacto-->
+    <section class="bg-light py-5">
+        <div class="container px-5 my-5 px-5">
+            <div class="text-center mb-5">
+                <p class="lead mb-0">Una acción que ayudará a difundir el compromiso con el cuidado del medio ambiente.
+                Hagamos de nuestro planeta un lugar más limpio, saludable y equilibrado con la naturaleza.</p>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-6">
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <!-- Nombre input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="name" type="text" placeholder="Enter your name..."
+                                data-sb-validations="required" />
+                            <label for="name">Nombre completo</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">El nombre es requerido.</div>
+                        </div>
+                        <!-- Email input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="email" type="email" placeholder="name@example.com"
+                                data-sb-validations="required,email" />
+                            <label for="email">Email</label>
+                            <div class="invalid-feedback" data-sb-feedback="email:required">El Email es requerido.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email no válido.</div>
+                        </div>
+                        <!-- Teléfono input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
+                                data-sb-validations="required" />
+                            <label for="phone">Teléfono</label>
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">El número de teléfono es
+                                requerido.</div>
+                        </div>
+                        <!-- Nombre input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="name" type="text" placeholder="Enter your name..."
+                                data-sb-validations="required" />
+                            <label for="name">Mote para el pingüino</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">El mote es requerido.</div>
+                        </div>
+                        <!-- Mensaje input-->
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="message" type="text"
+                                placeholder="Enter your message here..." style="height: 10rem"
+                                data-sb-validations="required"></textarea>
+                            <label for="message">Mensaje</label>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">Mensaje requerido.</div>
+                        </div>
+                        <!-- Enviar mensaje-->
+                        <!---->
+                        <!-- This is what your users will see when the form-->
+                        <!-- has successfully submitted-->
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">
+                                <div class="fw-bolder">¡Formulario enviado correctamente!</div>
+                                
+                            </div>
+                        </div>
+                        <!-- Submit error message-->
+                        <!---->
+                        <!-- This is what your users will see when there is-->
+                        <!-- an error submitting the form-->
+                        <div class="d-none" id="submitErrorMessage">
+                            <div class="text-center text-danger mb-3">Error al enviar el mensaje, revisa los datos</div>
+                        </div>
+                        <!-- Submit Button-->
+                        <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton"
+                                type="submit">Enviar</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Icono con un pingüino para regresar arriba al encabezado -->
+    <div class="text-center mb-5">
+        <a class="volverArriba" href=#menu><img class="icono" alt="Icono Pagina" src="imagenes/icono.png"></a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <address class="container px-5">
+            <p class="m-0 text-center text-white">Copyright &copy; Miguel Mondéjar González</p>
+            <p class="m-0 text-center text-white">2º Desarrollo de Aplicaciones Web</p>
+            <p class="m-0 text-center text-white">Diseño de interfaces Web</p>
+        </address>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
+</html>
