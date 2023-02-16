@@ -11340,6 +11340,15 @@ textarea.form-control-lg {
   animation-name: opacidad;
 }
 
+.logoHome {
+  width: 85%;
+  transition: width 3s;
+}
+
+.logoHome:hover {
+  width: 90%;
+}
+
 @keyframes opacidad { 
   0% {
       opacity: 0;
@@ -11368,7 +11377,7 @@ textarea.form-control-lg {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 90%;
 }
 
 audio {
